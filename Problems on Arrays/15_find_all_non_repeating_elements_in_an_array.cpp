@@ -57,48 +57,48 @@ Algorithm:
 2. If count equals 1, print the element.
 */
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// int main()
-// {
-//     int n;
-//     cin >> n;
+int main()
+{
+    int n;
+    cin >> n;
 
-//     int arr[n];
-//     for (int i = 0; i < n; i++)
-//     {
-//         cin >> arr[i];
-//     }
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 
-//     bool found = false;
+    bool found = false;
 
-//     for (int i = 0; i < n; i++)
-//     {
-//         int count = 0;
+    for (int i = 0; i < n; i++)
+    {
+        int count = 0;
 
-//         for (int j = 0; j < n; j++)
-//         {
-//             if (arr[i] == arr[j])
-//             {
-//                 count++;
-//             }
-//         }
+        for (int j = 0; j < n; j++)
+        {
+            if (arr[i] == arr[j])
+            {
+                count++;
+            }
+        }
 
-//         if (count == 1)
-//         {
-//             cout << arr[i] << " ";
-//             found = true;
-//         }
-//     }
+        if (count == 1)
+        {
+            cout << arr[i] << " ";
+            found = true;
+        }
+    }
 
-//     if (!found)
-//     {
-//         cout << "No Non-Repeating Elements";
-//     }
+    if (!found)
+    {
+        cout << "No Non-Repeating Elements";
+    }
 
-//     return 0;
-// }
+    return 0;
+}
 
 /*
 Better:     TC -> O(N log N)      SC -> O(1)
@@ -109,41 +109,41 @@ Algorithm:
 3. Elements appearing exactly once are non-repeating.
 */
 
-// #include <iostream>
-// #include <algorithm>
-// using namespace std;
+#include <iostream>
+#include <algorithm>
+using namespace std;
 
-// int main()
-// {
-//     int n;
-//     cin >> n;
+int main()
+{
+    int n;
+    cin >> n;
 
-//     int arr[n];
-//     for (int i = 0; i < n; i++)
-//     {
-//         cin >> arr[i];
-//     }
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 
-//     sort(arr, arr + n);
+    sort(arr, arr + n);
 
-//     bool found = false;
+    bool found = false;
 
-//     for (int i = 0; i < n; i++)
-//     {
-//         if ((i == 0 || arr[i - 1] != arr[i]) && (i == n - 1 || arr[i] != arr[i + 1]))
-//         {
-//             cout << arr[i] << " ";
-//             found = true;
-//         }
-//     }
+    for (int i = 0; i < n; i++)
+    {
+        if ((i == 0 || arr[i - 1] != arr[i]) && (i == n - 1 || arr[i] != arr[i + 1]))
+        {
+            cout << arr[i] << " ";
+            found = true;
+        }
+    }
 
-//     if (!found)
-//     {
-//         cout << "No Non-Repeating Elements";
-//     }
+    if (!found)
+    {
+        cout << "No Non-Repeating Elements";
+    }
 
-//     return 0;
-// }
+    return 0;
+}
 
 /*
 Optimal:    TC -> O(N)      SC -> O(N)
