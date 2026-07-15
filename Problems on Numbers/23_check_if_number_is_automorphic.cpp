@@ -1,5 +1,5 @@
 /*
-Q. Check if a Number is Automorphic
+Q48. Check if a Number is Automorphic
 
 Topic: Numbers
 
