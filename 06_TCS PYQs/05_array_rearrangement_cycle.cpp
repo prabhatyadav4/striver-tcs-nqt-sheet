@@ -1,4 +1,6 @@
 /*
+TCS NQT Coding 20 July 2026 Shift 2 (My Shift)
+
 Q1. Array Rearrangement Cycle
 
 Topic: Arrays
